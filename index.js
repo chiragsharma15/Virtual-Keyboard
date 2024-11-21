@@ -39,6 +39,7 @@ const keysLayout = [
     'N',    
     'M',
     'Backspace',
+    'Space',
 ];
 
 // create the keyboard keys dynammically
@@ -53,7 +54,12 @@ keysLayout.forEach((key) => {
         keyElement.addEventListener("click", () => {
             textInput.value = textInput.value.slice(0, -1);
         });
-    } 
+    } else if (key === "Space") {
+        keyElement.classList.add("space");
+        keyElement.addEventListener("click", () => {
+            textInput.value += " ";
+        });
+    }
     else {
         keyElement.addEventListener("click", () => {
             textInput.value += key;

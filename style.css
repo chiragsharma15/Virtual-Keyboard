@@ -65,3 +65,15 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.space {
+  grid-column: span 2;
+  background-color: #f7f7f7;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.space:hover {
+  background-color: #ff5a5a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
